@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img id="logo" src="logobleu.png" alt="EcoShop Logo">
+            <h1>EcoShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><span id="cart-counter">🛒 0</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <h2>Nos Produits Recyclés</h2>
+        <div class="filters">
+            <button class="filter-button active" data-category="tous">Tous</button>
+            <button class="filter-button" data-category="textile">Textile</button>
+            <button class="filter-button" data-category="hygiène">Hygiène</button>
+            <button class="filter-button" data-category="mobilier">Mobilier</button>
+        </div>
+
+        <div class="product-grid">
+            <div class="product" data-category="textile">
+                <h4>100% Recyclé</h4>
+                <img src="sac.jpg" alt="Sac en coton recyclé">
+                <div class="product-info">
+                    <h3>Sac en coton recyclé</h3>
+                    <p>Fabriqué à partir de vêtements upcyclés, capacité 15L</p>
+                    <p class="price">15,99 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product" data-category="textile">
+                <h4>Recyclable</h4>
+                <img src="pantalon.jpg" alt="Coussins en jeans recyclés">
+                <div class="product-info">
+                    <h3>pantalon recyclé</h3>
+                    <p>Lot de 2 coussins 40x40cm, rembourrage en bouteilles PET</p>
+                    <p class="price">39,90 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product" data-category="décoration">
+                <h4>Upcyclé</h4>
+                <img src="vase.jpg" alt="Vase en verre recyclé">
+                <div class="product-info">
+                    <h3>Vase en verre recyclé</h3>
+                    <p>Pièce unique faite main à partir de bouteilles</p>
+                    <p class="price">11,50 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product" data-category="mobilier">
+                <h4>Recyclé</h4>
+                <img src="table.jpg" alt="Table en palettes recyclées">
+                <div class="product-info">
+                    <h3>Table en bois recyclées</h3>
+                    <p>Dimensions 120x80cm, traitement écologique</p>
+                    <p class="price">149,00 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product" data-category="mobilier">
+                <h4>Recyclé</h4>
+                <img src="canap.jpg" alt="Table en palettes recyclées">
+                <div class="product-info">
+                    <h3>Canapé</h3>
+                    <p>Canapé en bois hyper compfortable</p>
+                    <p class="price">90,60 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product" data-category="mobilier">
+                <h4>Recyclé</h4>
+                <img src="ass.jpg" alt="Table en palettes recyclées">
+                <div class="product-info">
+                    <h3>Assiette</h3>
+                    <p>assiette en bois solide garantit a vis</p>
+                    <p class="price">15,00 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product" data-category="hygiène">
+                <h4>Recyclable</h4>
+                <img src="savon.jpg" alt="Kit savons zero waste">
+                <div class="product-info">
+                    <h3>Kit savons zero waste</h3>
+                    <p>savon solides recyclé dans un emballage compostable</p>
+                    <p class="price">18,90 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+             <div class="product" data-category="hygiène">
+                <h4>Recyclable</h4>
+                <img src="dent.jpg" alt="Kit savons zero waste">
+                <div class="product-info">
+                    <h3>Dentifrice</h3>
+                    <p>Dentifrice recyclé dans un emballage compostable</p>
+                    <p class="price">9,90 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+             <div class="product" data-category="hygiène">
+                <h4>Recyclable</h4>
+                <img src="shomp.jpg" alt="Kit savons zero waste">
+                <div class="product-info">
+                    <h3>shampoing</h3>
+                    <p>shampoing recyclé, pour cheveux dans un emballage compostable</p>
+                    <p class="price">10,90 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product" data-category="textile">
+                <h4>Recyclé</h4>
+                <img src="shirt.jpg" alt="Chemise upcyclée">
+                <div class="product-info">
+                    <h3>T-Shirte recyclée</h3>
+                    <p>Taille unique, fabriquée à partir de draps vintage</p>
+                    <p class="price">16,00 €</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        
+        <div id="cart-modal" style="display: none;">
+            <div>
+                <button id="close-modal">X</button>
+                <h2>Panier</h2>
+                <div id="cart-items"></div>
+                <p id="total-price">Total: 0 €</p>
+                <button id="buy-button">Achetez</button>
+                <button id="confirm-button" style="display: none;">Confirmer</button>
+                <button id="empty-cart">Vider le panier</button>
+            </div>
+        </div>
+
+        <div id="login-modal" style="display: none;">
+            <div>
+                <button id="close-login-modal">X</button>
+                <h2>Connexion</h2>
+                <form id="login-form">
+                    <label for="login-email">Email :</label>
+                    <input type="email" id="login-email" name="email" required>
+                    <label for="login-password">Mot de passe :</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <button type="submit">Se connecter</button>
+                </form>
+                <p>Pas de compte ? <a href="#" id="switch-to-register">Inscrivez-vous ici</a>.</p>
+            </div>
+        </div>
+
+        <div id="register-modal" style="display: none;">
+            <div>
+                <button id="close-register-modal">X</button>
+                <h2>Inscription</h2>
+                <form id="register-form">
+                    <label for="register-name">Nom complet :</label>
+                    <input type="text" id="register-name" name="name" required>
+                    <label for="register-email">Email :</label>
+                    <input type="email" id="register-email" name="email" required>
+                    <label for="register-password">Mot de passe :</label>
+                    <input type="password" id="register-password" name="password" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <p>Déjà un compte ? <a href="#" id="switch-to-login">Connectez-vous ici</a>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>EcoShop</h3>
+                <p>Votre marketplace éco-responsable depuis 2023</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p><a href="mailto:contact@ecoshop.fr">contact@ecoshop.fr</a></p>
+                <p>01 23 45 67 89</p>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#">📱</a>
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                </div>
+            </div>
+        </div>
+        <p>© 2023 EcoShop - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

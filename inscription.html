@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉcoShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img id="logo" src="logobleu.png" alt="ÉcoShop Logo">
+            <h1>ÉcoShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Créez votre compte</h2>
+            <form id="register-form">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+            <p>Déjà un compte ? <a href="connexion.html">Connectez-vous ici</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 ÉcoShop. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            localStorage.setItem('hasVisited', 'true');
+            sessionStorage.setItem('isLoggedIn', 'true');
+            alert('Inscription réussie ! Vous êtes maintenant connecté.');
+            window.location.href = 'boutique.html';
+        });
+    </script>
+</body>
+</html>
